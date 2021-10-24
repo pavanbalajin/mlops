@@ -1,0 +1,22 @@
+steps:
+navigate to D:\Teaching\djangolab\learning
+create dockerfile, dockercompose file
+docker build -t django .
+docker run -it -p 8000:8000 django
+you can run above or from docker desktop.
+
+testing:
+open postman, create request,
+address: http://localhost:8000/apicalling/test
+select POST
+body below:
+{
+
+"sepal_length": "6",
+
+"sepal_width": "2",
+
+"petal_length": "4",
+
+"petal_width" : "5"
+}
